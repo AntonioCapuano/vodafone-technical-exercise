@@ -1,0 +1,15 @@
+@import '../styles.scss';
+
+.app-wrapper {
+  background: $black;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  height: 100vh;
+  background-color: gray;
+
+  .router-wrapper {
+    // width: calc(100vw);
+    height: calc(100% - $navbar-height);
+  }
+}

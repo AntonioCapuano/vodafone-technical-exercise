@@ -1,0 +1,8 @@
+<div id="home" class="home p-4 pt-0">
+    <app-search-box></app-search-box>
+    <h3 *ngIf="!(CS.loading) && (CS.comments|async)?.length === 0">No comments found</h3>
+    <app-loader *ngIf="CS.loading|async"></app-loader>
+    <comment *ngFor="let comment of CS.comments|async" [comment]="comment">
+    </comment>
+    <pagination></pagination>
+</div>

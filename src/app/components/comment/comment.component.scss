@@ -1,0 +1,71 @@
+@import '../../../styles.scss';
+
+.comment-wrapper {
+  display: flex;
+  flex-flow: column;
+  background-color: $black;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0 ;
+  }
+
+  .top-section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+
+    .logo-image {
+      background: $primary;
+      width: 4rem;
+      height: 4rem;
+      font-family: "Empires";
+      text-transform: uppercase;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+
+      .logo-text {
+        font-size: 2rem;
+        letter-spacing: .5rem;
+        margin-left: 0.25rem;
+        margin-bottom: 0.25rem;
+      }
+
+    }
+
+    .logo-header {
+
+      h4 {
+        color: $secondary;
+      }
+
+      h6 {
+        font-style: italic;
+      }
+    }
+  }
+
+  .body-section {
+    h3 {
+      color: white;
+    //   font-weight: 600;
+      margin-bottom: .5rem;
+    }
+    p{
+        font-size: 1.5rem;
+        line-height: 1rem;
+    }
+  }
+}

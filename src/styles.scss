@@ -1,1 +1,19 @@
-/* You can add global styles to this file, and also import other style files */
+@import './assets/fonts/fonts.scss';
+
+$black: #1f2122;
+$gray: #27292a;
+$light-gray: #5d5d5d;
+$primary: #ec6090;
+$secondary: #5cd2c0;
+
+$navbar-height: 6rem;
+$pagination-height: 3rem;
+
+body {
+  font-family: "GillSans";
+  font-weight: 300;
+
+  * {
+    scroll-behavior: smooth;
+  }
+}

@@ -1,0 +1,16 @@
+<div class="pagination-wrapper">
+    <button class="button" (click)="pagination.goFirstPage()" [disabled]="pagination.isGoFirstDisabled()">
+        <<
+    </button>
+    <button class="button" (click)="pagination.goPreviousPage()"
+        [disabled]="pagination.isGoPreviousDisabled()">
+        <
+    </button>
+    <button class="button" (click)="pagination.goNextPage()" [disabled]="pagination.isGoNextDisabled()">
+        >
+    </button>
+    <button class="button" (click)="pagination.goLastPage()" [disabled]="pagination.isGoLastDisabled()">
+        >>
+    </button>
+
+</div>

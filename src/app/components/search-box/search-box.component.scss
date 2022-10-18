@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+form {
+  position: sticky;
+  top: 0;
+  margin-bottom: 1rem;
+  background-image: linear-gradient(180deg, $gray 80%, transparent);
+
+  input, select {
+    background-color: transparent;
+    border-color: $primary;
+    color: white;
+  }
+
+  select option{
+    color: black;
+  }
+
+  .btn{
+    // font-family: "Empires";
+
+    &.btn-primary{
+        color: white;
+        border-color: $primary;
+        background-color: $primary;
+        // font-size: 2rem;
+
+        &:hover{
+        }
+    }
+    &.btn-outline-secondary{
+        color: $secondary;
+        border-color: $secondary;
+        // font-size: 2rem;
+
+        &:hover{
+            background-color: $secondary;
+            color: white;
+        }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+.home {
+  background-color: $gray;
+  height: calc(100% - $pagination-height);
+  color: $light-gray;
+  overflow: auto;
+
+}
+
+:host ::ng-deep {
+  .comment {
+    &:first-of-type .comment-wrapper {
+      margin-top: 0;
+    }
+
+    &:last-of-type .comment-wrapper {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,21 @@
+<div class="comment-wrapper" *ngIf="comment">
+    <div class="top-section">
+        <div class="logo-image d-none d-md-flex">
+            <div class="logo-text">
+                {{logo}}
+            </div>
+        </div>
+        <div class="logo-header">
+            <h4>{{username}}</h4>
+            <span class="d-flex flex-wrap">
+                <h6>{{comment.email}}</h6>
+                &nbsp;&nbsp;
+                <code>postId:{{comment.postId}}</code>
+            </span>
+        </div>
+    </div>
+    <div class="body-section">
+        <h3>{{comment.name}}</h3>
+        <p>{{comment.body}}</p>
+    </div>
+</div>

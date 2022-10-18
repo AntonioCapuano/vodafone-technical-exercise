@@ -1,0 +1,23 @@
+@import '../../../styles.scss';
+
+.header-wrapper {
+  background-color: $black;
+  height: $navbar-height;
+  width: 100%;
+  color: $primary;
+  align-items: center;
+  justify-content: center;
+
+  .header {
+    display: flex;
+
+    a {
+      background: -webkit-linear-gradient(0deg, $primary 40%, $secondary);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-family: "Empires";
+      font-size: 3rem;
+      letter-spacing: 1px;
+    }
+  }
+}
